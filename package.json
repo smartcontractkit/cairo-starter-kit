@@ -1,0 +1,17 @@
+{
+  "name": "starknet-data-feeds",
+  "scripts": {
+    "build": "yarn hardhat starknet-compile",
+    "deploy": "yarn ts-node ./scripts/deployConsumer.ts",
+    "readLatestRound": "yarn ts-node ./scripts/readLatestRound.ts",
+    "readLatestRoundOffChain": "yarn ts-node ./scripts/readLatestRoundOffChain.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@shardlabs/starknet-hardhat-plugin": "^0.7.1",
+    "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "starknet": "^4.17.1"
+  }
+}
